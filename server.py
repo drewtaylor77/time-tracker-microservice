@@ -32,7 +32,7 @@ while True:
             hours = message.get('hours')
             if isinstance(hours, int) and hours >= 0:
                 game_hour = (game_hour + hours) % 24
-                reply = {'NewTime': f'{game_hour}:00'}
+                reply = {'New Time': f'{game_hour}:00'}
             else:
                 reply = {'Error': 'Invalid hours value'}
 
